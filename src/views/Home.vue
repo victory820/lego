@@ -15,7 +15,7 @@ export default defineComponent({
   },
   setup () {
     const store = useStore<GlobalDataProps>()
-    const templates = computed(() => store.state.templates)
+    const templates = computed(() => store.state.templates.data)
     return {
       templates
     }
